@@ -1,0 +1,3 @@
+local graph = [==[[{"id":1,"kind":4,"name":"Settings","x":40,"y":80,"inputs":[],"outputs":[{"id":1,"name":"nodeCount","value":"6"}]},{"id":2,"kind":2,"name":"Generate Tree","x":288,"y":80,"codePath":"../nodes/generate-tree.lua","inputs":[{"id":1,"name":"nodeCount","srcNodeId":1,"srcOutputId":1}],"outputs":[{"id":1,"name":"tree","value":null}]},{"id":3,"kind":2,"name":"Save Tree","x":536,"y":80,"codePath":"../nodes/save-tree.lua","inputs":[{"id":1,"name":"tree","srcNodeId":2,"srcOutputId":1}],"outputs":[{"id":1,"name":"path","value":null}]},{"id":4,"kind":1,"name":"Result","x":784,"y":80,"inputs":[{"id":1,"name":"path","srcNodeId":3,"srcOutputId":1}],"outputs":[]}]]==]
+function ng_graph_json() return graph end
+return { ng_graph_json = ng_graph_json }

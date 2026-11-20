@@ -1,16 +1,29 @@
 .DEFAULT_GOAL := package
 .DELETE_ON_ERROR:
-ARCHIVES := build.nosync/tilemap.zip
-TILEMAP_FILES := gams.json maps/courtyard.qoi maps/courtyard.tilemap.json
+DEMOS := tilemap aseprite sql nodegraph
+ARCHIVES := $(addprefix build.nosync/,$(addsuffix .zip,$(DEMOS)))
+FILES_tilemap := gams.json maps/courtyard.qoi maps/courtyard.tilemap.json
+FILES_aseprite := gams.json art/firefly.aseprite
+FILES_sql := gams.json data/seed.sql
+FILES_nodegraph := gams.json graphs/tree.ng.lua nodes/generate-tree.lua nodes/save-tree.lua
 
 .PHONY: package clean
 package: $(ARCHIVES) build.nosync/SHA256SUMS
 
-build.nosync/tilemap.zip: $(addprefix tilemap/,$(TILEMAP_FILES)) LICENSE NOTICE Makefile
+build.nosync/seed/data/items.sqlite: sql/data/seed.sql Makefile
+	@mkdir -p "$(@D)"
+	@set -eu; stage="$@.tmp"; rm -f "$$stage"; trap 'rm -f "$$stage"' EXIT; \
+		sqlite3 -batch -bail "$$stage" < "$<"; mv "$$stage" "$@"
+
+.SECONDEXPANSION:
+build.nosync/%.zip: $$(addprefix %/,$$(FILES_$$*)) LICENSE NOTICE Makefile
 	@mkdir -p "$(@D)"
 	@set -eu; stage="$@.tmp.zip"; rm -f "$$stage"; trap 'rm -f "$$stage"' EXIT; \
-		(cd tilemap && zip -q -X "../$$stage" $(TILEMAP_FILES)); \
+		(cd "$*" && zip -q -X "../$$stage" $(FILES_$*)); \
+		if [ "$*" = sql ]; then (cd build.nosync/seed && zip -q -X "../../$$stage" data/items.sqlite); fi; \
 		zip -q -X "$$stage" LICENSE NOTICE; mv "$$stage" "$@"
+
+build.nosync/sql.zip: build.nosync/seed/data/items.sqlite
 
 build.nosync/SHA256SUMS: $(ARCHIVES)
 	cd "$(@D)" && shasum -a 256 $(notdir $(ARCHIVES)) > SHA256SUMS

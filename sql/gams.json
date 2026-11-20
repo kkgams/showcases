@@ -1,0 +1,146 @@
+{
+  "plugins": [
+    {
+      "$file": "https://github.com/kkgams/plugin.fs/releases/download/v0.2.3/plugin.fs.wasm"
+    },
+    {
+      "$file": "https://github.com/kkgams/plugin.layout/releases/download/v0.2.3/plugin.layout.wasm"
+    },
+    {
+      "$file": "https://github.com/kkgams/plugin.sql/releases/download/v0.2.2/plugin.sql.wasm"
+    }
+  ],
+  "ui": {
+    "keys": [],
+    "theme": {
+      "url": {
+        "$file": {
+          "url": "https://github.com/kkgams/theme.gams/releases/download/v1.0.2/theme.gams.zip",
+          "entry": "themes/the98.css"
+        }
+      }
+    },
+    "services": {
+      "ui-context": {
+        "url": {
+          "$file": {
+            "url": "https://github.com/kkgams/ui-service.context/releases/download/v0.2.3/ui-service.context.zip",
+            "entry": "ui-plugins/context.js"
+          }
+        }
+      },
+      "ui-keys": {
+        "url": {
+          "$file": {
+            "url": "https://github.com/kkgams/ui-service.keys/releases/download/v0.2.2/ui-service.keys.zip",
+            "entry": "ui-plugins/keys.js"
+          }
+        }
+      },
+      "ui-toast": {
+        "url": {
+          "$file": {
+            "url": "https://github.com/kkgams/ui-service.toast/releases/download/v0.2.2/ui-service.toast.zip",
+            "entry": "ui-plugins/toast.js"
+          }
+        }
+      },
+      "ui-popup": {
+        "url": {
+          "$file": {
+            "url": "https://github.com/kkgams/ui-service.popup/releases/download/v0.2.2/ui-service.popup.zip",
+            "entry": "ui-plugins/popup.js"
+          }
+        }
+      },
+      "ui-tooltip": {
+        "url": {
+          "$file": {
+            "url": "https://github.com/kkgams/ui-service.tooltip/releases/download/v0.2.2/ui-service.tooltip.zip",
+            "entry": "ui-plugins/tooltip.js"
+          }
+        }
+      },
+      "ui-layout": {
+        "url": {
+          "$file": {
+            "url": "https://github.com/kkgams/ui-service.layout/releases/download/v0.2.2/ui-service.layout.zip",
+            "entry": "ui-plugins/layout.js"
+          }
+        },
+        "config": {
+          "layout": "<view-sql-console />"
+        }
+      }
+    },
+    "views": {
+      "view-files": {
+        "url": {
+          "$file": {
+            "url": "https://github.com/kkgams/view.files/releases/download/v1.0.2/view.files.zip",
+            "entry": "views/view-files.js"
+          }
+        },
+        "label": "Files",
+        "group": "Project",
+        "internal": false,
+        "config": {
+          "open": {
+            "default": "files-default"
+          }
+        }
+      },
+      "files-rename": {
+        "url": {
+          "$file": {
+            "url": "https://github.com/kkgams/view.files/releases/download/v1.0.2/view.files.zip",
+            "entry": "views/files-rename.js"
+          }
+        },
+        "label": "Rename File",
+        "internal": true
+      },
+      "files-default": {
+        "url": {
+          "$file": {
+            "url": "https://github.com/kkgams/view.files/releases/download/v1.0.2/view.files.zip",
+            "entry": "views/files-default.js"
+          }
+        },
+        "label": "File Info",
+        "internal": true
+      },
+      "view-sql": {
+        "url": {
+          "$file": {
+            "url": "https://github.com/kkgams/view.sql/releases/download/v1.1.3/view.sql.zip",
+            "entry": "views/view-sql.js"
+          }
+        },
+        "label": "Database",
+        "internal": false
+      },
+      "view-sql-console": {
+        "url": {
+          "$file": {
+            "url": "https://github.com/kkgams/view.sql/releases/download/v1.1.3/view.sql.zip",
+            "entry": "views/view-sql-console.js"
+          }
+        },
+        "label": "SQL Console",
+        "internal": false
+      },
+      "sql-table-editor": {
+        "url": {
+          "$file": {
+            "url": "https://github.com/kkgams/view.sql/releases/download/v1.1.3/view.sql.zip",
+            "entry": "views/sql-table-editor.js"
+          }
+        },
+        "label": "Table editor",
+        "internal": true
+      }
+    }
+  },
+  "sql": "data/items.sqlite"
+}
