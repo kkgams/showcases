@@ -9,3 +9,8 @@ The Aseprite, SQL, and Nodegraph Project configurations are adapted from
 Apache-2.0 GAMS Projects in kkgams/view.image, kkgams/view.sql, and
 kkgams/view.ng. The Firefly sprite, item dataset, and tree workflow are
 original showcase content under Apache-2.0.
+
+The MarkovJunior, BulletML, and Track Project configurations are adapted from
+Apache-2.0 GAMS Projects in kkgams/view.markov, kkgams/view.bullet, and
+kkgams/view.track. The island rule, spiral pattern, and Sunset Circuit
+blueprint are original showcase content under Apache-2.0.

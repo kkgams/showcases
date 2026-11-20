@@ -8,6 +8,9 @@ Sample Projects for [GAMS](https://gams.z0.lv/). Each archive contains `gams.jso
 | [Aseprite](aseprite/) | Play the firefly animation and toggle the Shadow layer. | `aseprite.zip` |
 | [SQL](sql/) | Run `SELECT name, price FROM items WHERE rarity = 'rare' ORDER BY price;`. | `sql.zip` |
 | [Nodegraph](nodegraph/) | Run the graph, edit `nodeCount` on the Settings node, then run again. Open `tree-output.json` from Files to inspect the result. | `nodegraph.zip` |
+| [MarkovJunior](markov/) | Step or play an island growth rule; change the seed and compare. | `markov.zip` |
+| [BulletML](bulletml/) | Play a spiral game pattern, pause, and step one frame at a time. | `bulletml.zip` |
+| [Track](track/) | Move a control point on Sunset Circuit and save the edited SVG. | `track.zip` |
 
 For Native GAMS, unzip an archive and open its `gams.json`. For GAMS Web, pass the tagged release asset URL as `showcase` in the launch URL. A fresh launch resets that demo; reload keeps saved edits. Close any other GAMS Web session on the same origin first.
 

@@ -1,0 +1,6 @@
+<one values="BEGU" origin="True" symmetry="(xy)">
+    <rule in="EB" out="EE" />
+    <rule in="EB" out="EG" p="0.35" />
+    <rule in="GB" out="GE" p="0.65" />
+    <rule in="GB" out="GU" p="0.25" />
+</one>

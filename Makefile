@@ -1,11 +1,14 @@
 .DEFAULT_GOAL := package
 .DELETE_ON_ERROR:
-DEMOS := tilemap aseprite sql nodegraph
+DEMOS := tilemap aseprite sql nodegraph markov bulletml track
 ARCHIVES := $(addprefix build.nosync/,$(addsuffix .zip,$(DEMOS)))
 FILES_tilemap := gams.json maps/courtyard.qoi maps/courtyard.tilemap.json
 FILES_aseprite := gams.json art/firefly.aseprite
 FILES_sql := gams.json data/seed.sql
 FILES_nodegraph := gams.json graphs/tree.ng.lua nodes/generate-tree.lua nodes/save-tree.lua
+FILES_markov := gams.json rules/island.xml
+FILES_bulletml := gams.json patterns/spiral.bulletml.json
+FILES_track := gams.json tracks/sunset-circuit.svg
 
 .PHONY: package clean
 package: $(ARCHIVES) build.nosync/SHA256SUMS

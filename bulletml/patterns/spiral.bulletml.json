@@ -1,0 +1,63 @@
+{
+  "type": "vertical",
+  "bullets": [
+    {
+      "actionRefs": [
+        2
+      ]
+    }
+  ],
+  "actions": [
+    [
+      {
+        "fireRef": 0
+      },
+      {
+        "repeat": {
+          "times": 47,
+          "actionRef": 1
+        }
+      }
+    ],
+    [
+      {
+        "wait": 3
+      },
+      {
+        "fireRef": 1
+      }
+    ],
+    [
+      {
+        "wait": 120
+      },
+      {
+        "vanish": true
+      }
+    ]
+  ],
+  "fires": [
+    {
+      "direction": {
+        "type": "absolute",
+        "value": 0
+      },
+      "speed": {
+        "type": "absolute",
+        "value": 1.5
+      },
+      "bulletRef": 0
+    },
+    {
+      "direction": {
+        "type": "sequence",
+        "value": 28
+      },
+      "speed": {
+        "type": "absolute",
+        "value": 1.5
+      },
+      "bulletRef": 0
+    }
+  ]
+}
