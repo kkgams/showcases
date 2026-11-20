@@ -14,3 +14,8 @@ The MarkovJunior, BulletML, and Track Project configurations are adapted from
 Apache-2.0 GAMS Projects in kkgams/view.markov, kkgams/view.bullet, and
 kkgams/view.track. The island rule, spiral pattern, and Sunset Circuit
 blueprint are original showcase content under Apache-2.0.
+
+The Code, Nine-slice, and Voxel Project configurations are adapted from
+Apache-2.0 GAMS Projects in kkgams/view.code, kkgams/view.nine, and
+kkgams/view.vox. The spawn schedule, panel atlas, and watchtower are original
+showcase content under Apache-2.0.

@@ -1,6 +1,6 @@
 .DEFAULT_GOAL := package
 .DELETE_ON_ERROR:
-DEMOS := tilemap aseprite sql nodegraph markov bulletml track
+DEMOS := tilemap aseprite sql nodegraph markov bulletml track code nine voxel
 ARCHIVES := $(addprefix build.nosync/,$(addsuffix .zip,$(DEMOS)))
 FILES_tilemap := gams.json maps/courtyard.qoi maps/courtyard.tilemap.json
 FILES_aseprite := gams.json art/firefly.aseprite
@@ -9,6 +9,9 @@ FILES_nodegraph := gams.json graphs/tree.ng.lua nodes/generate-tree.lua nodes/sa
 FILES_markov := gams.json rules/island.xml
 FILES_bulletml := gams.json patterns/spiral.bulletml.json
 FILES_track := gams.json tracks/sunset-circuit.svg
+FILES_code := gams.json scripts/wave.js
+FILES_nine := gams.json art/panel.png art/panel.nine.json
+FILES_voxel := gams.json models/watchtower.vox
 
 .PHONY: package clean
 package: $(ARCHIVES) build.nosync/SHA256SUMS
