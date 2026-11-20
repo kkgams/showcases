@@ -1,0 +1,33 @@
+{
+  "format": "gams.nine",
+  "version": 1,
+  "image": "art/panel.png",
+  "slices": [
+    {
+      "name": "Dialog panel",
+      "type": "nine",
+      "bounds": {
+        "x": 8,
+        "y": 8,
+        "width": 64,
+        "height": 48
+      },
+      "center": {
+        "x": 8,
+        "y": 8,
+        "width": 48,
+        "height": 32
+      }
+    },
+    {
+      "name": "Gem icon",
+      "type": "region",
+      "bounds": {
+        "x": 78,
+        "y": 8,
+        "width": 12,
+        "height": 12
+      }
+    }
+  ]
+}

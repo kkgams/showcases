@@ -19,3 +19,14 @@ The Code, Nine-slice, and Voxel Project configurations are adapted from
 Apache-2.0 GAMS Projects in kkgams/view.code, kkgams/view.nine, and
 kkgams/view.vox. The spawn schedule, panel atlas, and watchtower are original
 showcase content under Apache-2.0.
+
+The World and Font Project configurations are adapted from Apache-2.0 GAMS
+Projects in kkgams/view.world and kkgams/plugin.font. The World pause menu is
+original showcase content and reuses the Nine-slice demo atlas.
+
+The World demo ships the “World example” MTSDF atlas from kkgams/view.world,
+derived from Press Start 2P Regular. Its source and generation parameters are
+documented at https://github.com/kkgams/view.world/blob/v0.5.0/examples/README.md.
+The Font demo ships Anton Regular from kkgams/plugin.font. Both preserve their
+copyright notices and SIL Open Font License 1.1 in their respective archive
+folders and are not Apache-2.0.

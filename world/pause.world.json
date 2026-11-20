@@ -1,0 +1,80 @@
+[
+  {
+    "name": "Pause menu",
+    "x": 0,
+    "y": 0,
+    "spatial": {
+      "id": "menu",
+      "group": true
+    }
+  },
+  {
+    "name": "Panel",
+    "x": 0,
+    "y": 0,
+    "render": "nine",
+    "spatial": {
+      "id": "panel",
+      "parent": "menu"
+    },
+    "nine": "art/panel.nine.json",
+    "slice": "Dialog panel",
+    "width": 320,
+    "height": 224
+  },
+  {
+    "name": "Title",
+    "x": 32,
+    "y": 36,
+    "render": "text",
+    "spatial": {
+      "id": "title",
+      "parent": "menu"
+    },
+    "font": "art/world-example.arfont",
+    "text": "PAUSED",
+    "fontSize": 24,
+    "color": "#ffdb8a"
+  },
+  {
+    "name": "Selection",
+    "x": 28,
+    "y": 102,
+    "render": "rectangle",
+    "spatial": {
+      "id": "selection",
+      "parent": "menu"
+    },
+    "width": 264,
+    "height": 38,
+    "color": "#824d49"
+  },
+  {
+    "name": "Resume",
+    "x": 42,
+    "y": 112,
+    "render": "text",
+    "spatial": {
+      "id": "resume",
+      "parent": "menu"
+    },
+    "font": "art/world-example.arfont",
+    "text": "Resume",
+    "fontSize": 16,
+    "color": "#ffffff"
+  },
+  {
+    "name": "Quit",
+    "x": 42,
+    "y": 162,
+    "render": "text",
+    "spatial": {
+      "id": "quit",
+      "parent": "menu"
+    },
+    "font": "art/world-example.arfont",
+    "text": "Quit",
+    "fontSize": 16,
+    "color": "#e8cdda"
+  }
+]
