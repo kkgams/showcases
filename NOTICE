@@ -30,3 +30,7 @@ documented at https://github.com/kkgams/view.world/blob/v0.5.0/examples/README.m
 The Font demo ships Anton Regular from kkgams/plugin.font. Both preserve their
 copyright notices and SIL Open Font License 1.1 in their respective archive
 folders and are not Apache-2.0.
+
+The Animation Project configuration is adapted from Apache-2.0 kkgams/view.animation
+and reuses the Firefly sprite. Image reuses the Nine-slice atlas, and Resource Pack
+uses the same Apache-2.0 View setup as the Nodegraph demo.

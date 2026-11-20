@@ -1,6 +1,6 @@
 .DEFAULT_GOAL := package
 .DELETE_ON_ERROR:
-DEMOS := tilemap aseprite sql nodegraph markov bulletml track code nine voxel world font
+DEMOS := tilemap aseprite sql nodegraph markov bulletml track code nine voxel world font animation image respack
 ARCHIVES := $(addprefix build.nosync/,$(addsuffix .zip,$(DEMOS)))
 FILES_tilemap := gams.json maps/courtyard.qoi maps/courtyard.tilemap.json
 FILES_aseprite := gams.json art/firefly.aseprite
@@ -14,6 +14,9 @@ FILES_nine := gams.json art/panel.png art/panel.nine.json
 FILES_voxel := gams.json models/watchtower.vox
 FILES_world := gams.json pause.world.json art/panel.png art/panel.nine.json art/world-example.arfont art/press-start-2p.OFL.txt
 FILES_font := gams.json fonts/Anton-Regular.ttf fonts/Anton.OFL.txt
+FILES_animation := gams.json firefly.animation.json art/firefly.aseprite
+FILES_image := gams.json art/ui-atlas.png art/crop-view.js
+FILES_respack := gams.json graphs/encounter.ng.lua nodes/build-pack.lua assets/schema.json assets/slots.json
 
 .PHONY: package clean
 package: $(ARCHIVES) build.nosync/SHA256SUMS

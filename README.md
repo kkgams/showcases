@@ -16,6 +16,9 @@ Sample Projects for [GAMS](https://gams.z0.lv/). Each archive contains `gams.jso
 | [Voxel](voxel/) | Orbit and zoom around a MagicaVoxel watchtower. | `voxel.zip` |
 | [World](world/) | Move a label or the selection highlight in an editable pause-menu scene. | `world.zip` |
 | [Font](font/) | Change the preview text or atlas type and regenerate a distance-field atlas from Anton. | `font.zip` |
+| [Animation](animation/) | Select Rise or Glide to preview two tagged clips from the Firefly sprite. | `animation.zip` |
+| [Image](image/) | Change the crop bounds and export a PNG from the sample atlas. | `image.zip` |
+| [Resource Pack](respack/) | Run the graph to build `encounter.rspk` and an Odin decoder. | `respack.zip` |
 
 For Native GAMS, unzip an archive and open its `gams.json`. For GAMS Web, pass the tagged release asset URL as `showcase` in the launch URL. A fresh launch resets that demo; reload keeps saved edits. Close any other GAMS Web session on the same origin first.
 

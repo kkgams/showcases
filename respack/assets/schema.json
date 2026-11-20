@@ -1,0 +1,8 @@
+{
+  "package": "encounter",
+  "types": {
+    "Encounter": { "type": "struct", "fields": { "name": "string", "waves": "u32" } },
+    "Banner": { "type": "bytes", "max_len": 256 }
+  },
+  "data": ["Encounter", "Banner"]
+}

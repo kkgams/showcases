@@ -15,4 +15,4 @@ jobs:
       - run: make package
       - env:
           GH_TOKEN: ${{ github.token }}
-        run: gh release create "$GITHUB_REF_NAME" --generate-notes --verify-tag build.nosync/tilemap.zip build.nosync/aseprite.zip build.nosync/sql.zip build.nosync/nodegraph.zip build.nosync/markov.zip build.nosync/bulletml.zip build.nosync/track.zip build.nosync/code.zip build.nosync/nine.zip build.nosync/voxel.zip build.nosync/world.zip build.nosync/font.zip build.nosync/SHA256SUMS
+        run: gh release create "$GITHUB_REF_NAME" --generate-notes --verify-tag build.nosync/tilemap.zip build.nosync/aseprite.zip build.nosync/sql.zip build.nosync/nodegraph.zip build.nosync/markov.zip build.nosync/bulletml.zip build.nosync/track.zip build.nosync/code.zip build.nosync/nine.zip build.nosync/voxel.zip build.nosync/world.zip build.nosync/font.zip build.nosync/animation.zip build.nosync/image.zip build.nosync/respack.zip build.nosync/SHA256SUMS

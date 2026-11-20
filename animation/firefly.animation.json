@@ -1,0 +1,106 @@
+{
+  "id": "firefly",
+  "name": "Firefly Flight",
+  "parameters": [],
+  "root": {
+    "id": "root",
+    "kind": "state-machine",
+    "name": "Flight",
+    "ports": [
+      {
+        "id": "animation",
+        "direction": "output",
+        "dataType": "animation",
+        "maxConnections": null
+      }
+    ],
+    "graph": {
+      "states": [
+        {
+          "node": {
+            "id": "rise",
+            "kind": "animation",
+            "name": "Rise",
+            "animation": {
+              "url": "art/firefly.aseprite",
+              "layer": "*",
+              "tag": "Rise"
+            },
+            "ports": [
+              {
+                "id": "animation",
+                "direction": "output",
+                "dataType": "animation",
+                "maxConnections": null
+              }
+            ]
+          },
+          "position": {
+            "x": 140,
+            "y": 120
+          }
+        },
+        {
+          "node": {
+            "id": "glide",
+            "kind": "animation",
+            "name": "Glide",
+            "animation": {
+              "url": "art/firefly.aseprite",
+              "layer": "*",
+              "tag": "Glide"
+            },
+            "ports": [
+              {
+                "id": "animation",
+                "direction": "output",
+                "dataType": "animation",
+                "maxConnections": null
+              }
+            ]
+          },
+          "position": {
+            "x": 420,
+            "y": 120
+          }
+        }
+      ],
+      "transitions": [
+        {
+          "id": 1,
+          "kind": "entry",
+          "from": "start",
+          "to": "rise"
+        },
+        {
+          "id": 2,
+          "kind": "transition",
+          "from": "rise",
+          "to": "glide",
+          "switchMode": "at-end",
+          "conditions": []
+        },
+        {
+          "id": 3,
+          "kind": "transition",
+          "from": "glide",
+          "to": "rise",
+          "switchMode": "at-end",
+          "conditions": []
+        }
+      ],
+      "start": {
+        "position": {
+          "x": -80,
+          "y": 120
+        }
+      },
+      "end": {
+        "position": {
+          "x": 690,
+          "y": 120
+        }
+      }
+    }
+  }
+}
