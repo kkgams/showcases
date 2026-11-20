@@ -1,0 +1,4 @@
+/build.nosync/
+/tools/
+/gams_modules/
+.DS_Store
